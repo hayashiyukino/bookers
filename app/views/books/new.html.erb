@@ -6,6 +6,9 @@
     <% end %>
   </ul>
   <% end %>
+
+<%= flash[:notice] %>
+  
 <%= form_with model: @book, url: "/books", method: :post do |f| %>
   <h4>New Book</h4>
   
